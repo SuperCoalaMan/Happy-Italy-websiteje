@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'happyitalic';
+  src: url('happy_italic-webfont.woff2') format('woff2'),
+       url('happy_italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 body {
     padding-top: 80px;
     background-color: burlywood;
+    font-family: 'happyitalic';
   }
   *{
     margin: 0;
@@ -13,6 +22,7 @@ body {
     background: #e82f2f;
     padding: 20px 0;
     color: #fff;
+    z-index: 2;
   }
   .fixed-header {
     top: 0;
@@ -42,6 +52,26 @@ body {
   * {
     box-sizing: border-box;
   }
+/* custom scrollbar */
+*::-webkit-scrollbar {
+  width: 20px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+  transition: .5s;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
   
   .bg-image {
     background-image: url("bgImage1.jpg");
@@ -70,5 +100,58 @@ body {
     width: 95%;
     padding: 20px;
     text-align: center;
+  }
+  .left
+  {
+    grid-area: left;
+  }
+  .right
+  {
+    grid-area: right;
+  }
+  .bottom
+  {
+    grid-area: bottom;
+  }
+  .bg-text
+  {
+    display: grid;
+    grid-template-areas: 
+    'left left left right right right'
+    'left left left right right right'
+    'left left left bottom bottom bottom'
+    'left left left bottom bottom bottom';
+  }
+  .bg-text > div {
+    padding: 20px 0;
+  }
+  div.scroll {
+    width: 600px;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+  }
+  .locatie {
+    height: 80px;
+    padding: 10px;
+    margin: 4px;
+    transition: .4s;
+    background-color: rgb(22,22,22); 
+    background-color: rgba(22, 22, 22, 0.4);
+    text-align: left;
+    font-size: 12px;
+  }
+  .locatie > p{
+    color: rgb(223, 223, 223);
+  }
+  .locatie:hover{
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.4);
+    scale: 1.01
+  }
+  .map {
+    transition: .5s;
   }
   
