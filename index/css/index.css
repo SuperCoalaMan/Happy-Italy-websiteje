@@ -49,18 +49,19 @@ body, html {
 }
 
 #stippen{
-    margin-top: 650px;
     text-align: center;
     width: 100vw;
+    margin-top: -25px;
 }
 
 .stip{
-position: absolute ;
+    
+position: absolute;
 cursor: pointer;
 height: 20px;
 width: 20px;
 margin: 0 2px;
-border: solid 5px black;
+border: solid 5px white;
 background-color: transparent;
 border-radius: 50%;
 display: inline-block;
@@ -75,4 +76,36 @@ transition: background-color 0.6s ease;
     margin: 0;
     height: 700px;
     max-height: 700px;
+}
+
+#knop{
+    background-color: #e82f2f;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 40px;
+    border-radius: 8px;
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 15vw;
+    font-weight: bold;
+}
+
+#titel{
+    margin-top: -500px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 15vw;
+    text-shadow: 1px 1px 2px gray;
+    color: #fff;
+}
+
+#tekst{
+    text-shadow: 1px 1px 2px gray;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15vw;
+    color: #fff;
 }
