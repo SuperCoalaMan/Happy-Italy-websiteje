@@ -89,5 +89,13 @@ function locatie(locatie)
         if (locatie == "Zoetermeer")
         {
             map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.034877719628!2d4.491441152086058!3d52.060888579630536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c929812f0805%3A0xfac7c5201b25c6aa!2sHappy%20Italy%20Zoetermeer!5e0!3m2!1sen!2snl!4v1678379682960!5m2!1sen!2snl"
-        }        
+        }
+        //Dingen die altijd gebeuren//
+        document.getElementById("sideHeaderText").innerHTML = "Happy Italy " + locatie;
+        document.getElementById("mySidebar").style.width = "400px";
 }
+
+const closeSidebar = () => {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+};
