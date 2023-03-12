@@ -1,10 +1,11 @@
 body {
     padding-top: 80px;
+    overflow-x: hidden;
 }
 *{
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    
 }
 .fixed-header,
 .fixed-footer {
@@ -44,7 +45,7 @@ body, html {
     height: 700px;
     position: relative;
     margin: auto;
-    margin-top: 1px;
+    margin-top: -5px;
     background-color: gray;
 }
 
@@ -72,7 +73,19 @@ transition: background-color 0.6s ease;
     background-color: red;
 }
 
-.img{
+#stip1{
+ margin-left: -30px
+}
+
+#stip2{
+
+}
+
+#stip3{
+    margin-left: 34px
+}
+
+#foto{
     margin: 0;
     height: 700px;
     max-height: 700px;
@@ -91,6 +104,37 @@ transition: background-color 0.6s ease;
     margin-top: -300px;
     margin-left: 15vw;
     font-weight: bold;
+}
+#knop2{
+    background-color: #e82f2f;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 38px;
+    border-radius: 8px;
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 15vw;
+    font-weight: bold;
+}
+
+#lijn{
+    height: 2px;
+    width: 100%;
+    border-top: black solid 10px;
+    margin-top: 90px;
+}
+
+#foto3{
+    width:180px ;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -85px;
+}
+#foto3div{
+    text-align: center;
 }
 
 #titel{
