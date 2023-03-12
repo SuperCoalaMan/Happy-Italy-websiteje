@@ -1,26 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="register.php" method="POST">
-        <label>Username:</label>
-        <input type="text" name="username" required>
-        <br>
-        <label>Password:</label>
-        <input type="password" name="password" required>
-        <br>
-        <label>Confirm Password:</label>
-        <input type="password" name="confirm_password" required>
-        <br>
-        <input type="submit" value="Register">
-    </form>
-</body>
-</html>
 <?php
 session_start();
 
@@ -33,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Validate the password
     if ($password != $confirm_password) {
         $_SESSION['error'] = "Passwords do not match";
-        header('Location: register.html');
+        header('Location: regi.html');
         exit();
     }
 
@@ -44,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     foreach ($users as $user) {
         if ($user['username'] == $username) {
             $_SESSION['error'] = "Username already exists";
-            header('Location: register.html');
+            header('Location: regi.html');
             exit();
         }
     }
@@ -63,27 +40,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     exit();
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="register.php" method="POST">
-        <label>Username:</label>
-        <input type="text" name="username" required>
-        <br>
-        <label>Password:</label>
-        <input type="password" name="password" required>
-        <br>
-        <label>Confirm Password:</label>
-        <input type="password" name="confirm_password" required>
-        <br>
-        <input type="submit" value="Register">
-    </form>
-</body>
-</html>

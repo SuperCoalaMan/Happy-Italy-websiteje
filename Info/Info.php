@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,12 +12,22 @@
   <body>
     <div class="fixed-header">
       <div class="container">
-        <nav>
-          <a href="#">info</a>
+        <nav id="nav">
           <a href="#">bestellen</a>
           <a href="#">menu</a>
-          <a href="#">Home</a>
+          <a href="../index.html">Home</a>
+          <?php if (isset($_SESSION['user_id'])) { ?>
+            <a href="../profile/profile.php">Profiel</a>
+            <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>!</h1>
+        <?php } else { ?>
           <a href="../AccountGegevens/login.html">Login</a>
+        <?php } ?>
+          <!--Als de user admin is komt er een tabje admin bij-->
+        <?php if ($_SESSION['user_id'] == 'admin') { ?>
+            <a href="../AccountGegevens/admin.php">Admin</a>
+            
+        <?php } else { ?>
+        <?php } ?>
         </nav>
       </div>
     </div>
@@ -38,10 +51,10 @@
       <div onclick="locatie('Kerkrade')" class="locatie"><h2>Happy Italy Kerkrade</h2><p>Kerkrade, 6466 NH</p><p>Roda J.C. Ring 2P</p><p>0457440083</p></div>
       <div onclick="locatie('Nieuwegein')" class="locatie"><h2>Happy Italy Nieuwegein</h2><p>Nieuwegein, 3433 KK</p><p>Arsenaalsdok 5 (Foodcourt, A27)</p></div>
       <div onclick="locatie('Roermond')" class="locatie"><h2>Happy Italy Roermond</h2><p>Roermond, 6041 EM</p><p>Markt 27</p><p>0475 260 190</p></div>
-      <div onclick="locatie('Rotterdamb')" class="locatie"><h2>Happy Italy Rotterdam (Bergweg)</h2><p>Rotterdam, 3037 EP</p><p>Bergweg 335</p><p>0107420628</p></div>
-      <div onclick="locatie('Rotterdambi')" class="locatie"><h2>Happy Italy Rotterdam (Binnenrotte)</h2><p>Rotterdam, 3011 HC</p><p>Binnenrotte 102</p><p>0102140836</p></div>
-      <div onclick="locatie('Rotterdamk')" class="locatie"><h2>Happy Italy Rotterdam (de Kuip)</h2><p>Rotterdam, 3077 MK</p><p>Cor Kieboomplein 120</p><p>0107420251</p></div>
-      <div onclick="locatie('Rotterdamz')" class="locatie"><h2>Happy Italy Rotterdam (Kop van Zuid)</h2><p>Rotterdam, 3072 AP</p><p>Wilhelminakade 123</p><p>0107420911</p></div>
+      <div onclick="locatie('Rotterdam-bergweg')" class="locatie"><h2>Happy Italy Rotterdam (Bergweg)</h2><p>Rotterdam, 3037 EP</p><p>Bergweg 335</p><p>0107420628</p></div>
+      <div onclick="locatie('Rotterdam-binnerotte')" class="locatie"><h2>Happy Italy Rotterdam (Binnenrotte)</h2><p>Rotterdam, 3011 HC</p><p>Binnenrotte 102</p><p>0102140836</p></div>
+      <div onclick="locatie('Rotterdam de kuip')" class="locatie"><h2>Happy Italy Rotterdam (de Kuip)</h2><p>Rotterdam, 3077 MK</p><p>Cor Kieboomplein 120</p><p>0107420251</p></div>
+      <div onclick="locatie('Rotterdam kop van zuid')" class="locatie"><h2>Happy Italy Rotterdam (Kop van Zuid)</h2><p>Rotterdam, 3072 AP</p><p>Wilhelminakade 123</p><p>0107420911</p></div>
       <div onclick="locatie('Schiedam')" class="locatie"><h2>Happy Italy Schiedam</h2><p>Schiedam, 3119 XX</p><p>Noorderweg 16</p><p>0107420919</p></div>
       <div onclick="locatie('Spijkernisse')" class="locatie"><h2>Happy Italy Spijkernisse</h2><p>Spijkernisse, 3201 CZ</p><p>Markt 42</p><p>0181744097</p></div>
       <div onclick="locatie('Tilburg')" class="locatie"><h2>Happy Italy Tilburg</h2><p>Tilburg, 5038 AH</p><p>Heuvelstraat 126</p><p>0137370300</p></div>
