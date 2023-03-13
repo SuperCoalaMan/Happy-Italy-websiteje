@@ -32,7 +32,7 @@ if (!isset($_SESSION['user_id'])) {
             <a href="../Info/Info.php">info</a>
             <a href="#">bestellen</a>
             <a href="#">menu</a>
-            <a href="../index.html">Home</a>
+            <a href="../index.php">Home</a>
             <?php if (isset($_SESSION['user_id'])) { ?>
             <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>! -Profiel</h1>
         <?php } else { ?>

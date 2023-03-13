@@ -7,7 +7,7 @@ session_start();
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Css/Info.css">
     <link rel="shortcut icon" type="image/x-icon" href="../belangrijkeimages/pictogram.png">
-    <title>Welkom - Happy Italy</title>
+    <title>Info - Happy Italy</title>
   </head>
   <body>
     <div class="fixed-header">
@@ -15,7 +15,7 @@ session_start();
         <nav id="nav">
           <a href="#">bestellen</a>
           <a href="#">menu</a>
-          <a href="../index.html">Home</a>
+          <a href="../index.php">Home</a>
           <?php if (isset($_SESSION['user_id'])) { ?>
             <a href="../profile/profile.php">Profiel</a>
             <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>!</h1>
