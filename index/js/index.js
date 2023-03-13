@@ -1,5 +1,5 @@
 let img = document.getElementById("foto")
-let fotos = ["../index/img/Happy_Italy_kinderfeestje.jpeg", "../index/img/happy-italy_uiteten-met-kinderen.png", "../index/img/happy-italy-vrouw.png"]
+let fotos = ["Happy_Italy_kinderfeestje.jpeg", "happy-italy_uiteten-met-kinderen.png", "happy-italy-vrouw.png"];
 let i=0
 function Slide(s){
     if(s == 1){
