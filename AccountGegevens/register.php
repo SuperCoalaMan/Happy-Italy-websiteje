@@ -2,19 +2,19 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Get the user input
+    
     $username = $_POST['username'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
-    // Validate the password
+   
     if ($password != $confirm_password) {
         $_SESSION['error'] = "Passwords do not match";
         header('Location: regi.html');
         exit();
     }
 
-    // Create a new user account
+   
     $users = file_get_contents('users.json');
     $users = json_decode($users, true);
 

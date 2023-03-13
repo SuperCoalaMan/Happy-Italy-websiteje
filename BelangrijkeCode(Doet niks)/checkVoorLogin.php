@@ -9,10 +9,10 @@ if (!isset($_SESSION['user_id'])) {
 
 <?php if (isset($_SESSION['user_id'])) { ?>
             <h1>Welcome, <?php echo $_SESSION['user_id']; ?>!</h1>
-            <p>You are now logged in.</p>
+            <p>Je bent ingelogt.</p>
         <?php } else { ?>
-            <h1>Welcome to My Website</h1>
-            <p>Please log in to access your account.</p>
+            <h1>welkom op de site</h1>
+            <p>U moet eerst inloggen om op uw account te komen.</p>
         <?php } ?>
 
         

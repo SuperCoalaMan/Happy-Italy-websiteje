@@ -22,12 +22,7 @@ session_start();
         <?php } else { ?>
           <a href="../AccountGegevens/login.html">Login</a>
         <?php } ?>
-          <!--Als de user admin is komt er een tabje admin bij-->
-        <?php if ($_SESSION['user_id'] == 'admin') { ?>
-            <a href="../AccountGegevens/admin.php">Admin</a>
-            
-        <?php } else { ?>
-        <?php } ?>
+
         </nav>
       </div>
     </div>
