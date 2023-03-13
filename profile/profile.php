@@ -21,16 +21,26 @@ if (!isset($_SESSION['user_id'])) {
 <body>
     <div class="fixed-header">
         <div class="container">
+            <!--Als de user admin is komt er een tabje admin bij-->
+        <?php if ($_SESSION['user_id'] == 'admin') { ?>
+            <a class="aPanel" href="../AccountGegevens/admin.php">Admin panel</a>
+            
+        <?php } else { ?>
+        <?php } ?>
+        
           <nav id="nav">
             <a href="../Info/Info.php">info</a>
             <a href="#">bestellen</a>
             <a href="#">menu</a>
             <a href="../index.html">Home</a>
             <?php if (isset($_SESSION['user_id'])) { ?>
-            <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>!</h1>
+            <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>! -Profiel</h1>
         <?php } else { ?>
-          
+
         <?php } ?>
+        <form action="logout.php" method="post">
+		      <button class="logout" type="submit" name="logout">Logout</button>
+	      </form>
           </nav>
         </div>
       </div>

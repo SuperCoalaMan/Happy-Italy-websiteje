@@ -41,24 +41,6 @@ if (isset($_POST['delete'])) {
 <html>
 <head>
 	<title>Registered Users</title>
-	<style>
-		table {
-			border-collapse: collapse;
-			width: 100%;
-		}
-		th, td {
-			text-align: left;
-			padding: 8px;
-			border-bottom: 1px solid #ddd;
-		}
-		th {
-			background-color: #4CAF50;
-			color: white;
-		}
-		tr:hover {
-			background-color: #f5f5f5;
-		}
-	</style>
     <link rel="stylesheet" href="Css/login.css">
 </head>
 <body>
@@ -66,6 +48,7 @@ if (isset($_POST['delete'])) {
       <div class="container">
         <nav id="nav">
           <a href="#">bestellen</a>
+		  <a href="../Info/Info.php">Info</a>
           <a href="#">menu</a>
           <a href="../index.html">Home</a>
           <?php if (isset($_SESSION['user_id'])) { ?>
