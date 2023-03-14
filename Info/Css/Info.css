@@ -14,6 +14,9 @@ body {
   *{
     margin: 0;
     box-sizing: border-box;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;    /*Normaal*/
   }
   .fixed-header,
   .fixed-footer {
@@ -48,10 +51,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
-  * {
-    box-sizing: border-box;
-  }
+
 /* custom scrollbar */
 *::-webkit-scrollbar {
   width: 20px;
