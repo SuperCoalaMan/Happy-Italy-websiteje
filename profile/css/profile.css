@@ -1,0 +1,138 @@
+
+body {
+    padding-top: 80px;
+    text-align: center;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.fixed-header,
+.fixed-footer {
+    width: 100%;
+    position: fixed;
+    background: #e82f2f;
+    padding: 20px 0;
+    color: #fff;
+}
+.fixed-header {
+    top: 0;
+}
+.fixed-footer {
+    bottom: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: fantasy;
+    padding: 10px 10px;
+    display: inline-block;
+    float: right;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cards{
+    height: 80%;
+    width: 100%;
+    display: inline-block;
+}
+.img{
+    height: 200px;
+    width: auto;
+    margin-top: 100px;
+    padding: 10px;
+}
+.card
+{
+    display: none;
+    height: 500px;
+    width: auto;
+    background-color: #e82f2f;
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    margin-left: 7%;
+    margin-top: 40px;
+    border-radius: 5px;
+    transition: .4s;
+    color: white;
+}
+.card:hover{
+    scale: 1.05;
+    background-color: #d62a2a;
+}
+.text{
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  height: 200px;
+  color: white;
+    
+}
+.label{
+    background-image: url(../../Info/Css/bgImage1.jpg);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+.infoBtn{
+    height: 25px;
+    width: 150px;
+    background-color: white;
+    border-radius: 7px;
+    margin-left: 30%;
+    margin-top: 15%;
+    color: black;
+    transition: .3s;
+    cursor: pointer;
+}
+.infoBtn:hover{
+    background-color: rgb(218, 215, 215);
+}
+.aPanel{
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    font-family: fantasy;
+    padding: 10px 10px;
+    background-color: #656869;
+    border: 2px solid #656869;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  .aPanel:hover{
+    background-color: #7a7d7e;
+    border-radius: 15px;
+    border: 2px solid white;
+  }
+  .logout{
+    background-color: white;
+    height: 20px;
+    width: 100px;
+    border-radius: 10px;
+    border-color: white;
+  }
+  .logout:hover{
+    border-color: black;
+  }

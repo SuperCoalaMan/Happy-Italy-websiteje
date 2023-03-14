@@ -54,19 +54,19 @@ function locatie(locatie)
         {
             map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500.2408752377387!2d5.983186952067914!3d51.19621307948517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c74b51b980e93d%3A0xb43db97dd1e72379!2sHappy%20Italy%20Roermond!5e0!3m2!1sen!2snl!4v1678379102450!5m2!1sen!2snl"
         }
-        if (locatie == "Rotterdamb")
+        if (locatie == "Rotterdam-bergweg")
         {
             map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19688.471896743456!2d4.479621714069493!3d51.914634894680276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c434ac231adf03%3A0x36637546b0fe6aaa!2sHappy%20Italy%20Rotterdam%20Bergweg!5e0!3m2!1sen!2snl!4v1678379196222!5m2!1sen!2snl"
         }
-        if (locatie == "Rotterdambi")
+        if (locatie == "Rotterdam-binnerotte")
         {
             map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19688.471896743456!2d4.479621714069493!3d51.914634894680276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c4335a2d60fa5b%3A0x48c6a8608ae9176b!2sHappy%20Italy%20Rotterdam%20Binnenrotte!5e0!3m2!1sen!2snl!4v1678379283236!5m2!1sen!2snl"
         }
-        if (locatie == "Rotterdamk")
+        if (locatie == "Rotterdam de kuip")
         {
-            map.scr = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.021991238576!2d4.521308852082563!3d51.89706277960134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c433018e28cc05%3A0x8059f45918c6081d!2sHappy%20Italy%20Rotterdam%20Zuid!5e0!3m2!1sen!2snl!4v1678379356316!5m2!1sen!2snl"
+            map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.0219912385764!2d4.521308852082554!3d51.897062779601335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c433018e28cc05%3A0x8059f45918c6081d!2sHappy%20Italy%20Rotterdam%20Zuid!5e0!3m2!1sen!2snl!4v1678617984772!5m2!1sen!2snl"
         }
-        if (locatie == "Rotterdamz")
+        if (locatie == "Rotterdam kop van zuid")
         {
             map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19688.471896743453!2d4.4796217140694905!3d51.91463489468029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c433392a198e3d%3A0x49ecac65cc81d5e5!2sHappy%20Italy%20Rotterdam%20Kop%20van%20Zuid!5e0!3m2!1sen!2snl!4v1678379416386!5m2!1sen!2snl"
         }
@@ -89,5 +89,16 @@ function locatie(locatie)
         if (locatie == "Zoetermeer")
         {
             map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.034877719628!2d4.491441152086058!3d52.060888579630536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c929812f0805%3A0xfac7c5201b25c6aa!2sHappy%20Italy%20Zoetermeer!5e0!3m2!1sen!2snl!4v1678379682960!5m2!1sen!2snl"
-        }        
+        }
+        //Dingen die altijd gebeuren//
+        document.getElementById("sideHeaderText").innerHTML = "Happy Italy " + locatie;
+        document.getElementById("mySidebar").style.width = "400px";
+}
+
+const closeSidebar = () => {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+};
+function ProfileOpen () {
+    document.getElementById("nav").innerHTML += "<a href='#'>Profiel</a>";
 }
