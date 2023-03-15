@@ -1,0 +1,308 @@
+.logo {
+  float: left;
+  position: fixed;
+  top: -0%;
+  left: 10px;
+}
+
+body {
+  margin: 0%;
+}
+
+.fixed-header,
+.fixed-footer {
+  width: 100%;
+  position: fixed;
+  background: #f3284d;
+  padding: 17px 0;
+  color: #fff;
+}
+
+.fixed-header {
+  top: 0px;
+}
+
+.fixed-footer {
+  bottom: 0px;
+}
+
+.pizza {
+  color: #f3284d;
+  position: fixed;
+  bottom: 23%;
+  font-family: bebas;
+  right: 60%;
+}
+
+.pasta {
+  color: #f3284d;
+  position: fixed;
+  bottom: 76%;
+  font-family: bebas;
+  right: 60%;
+}
+
+.drinks {
+  color: #f3284d;
+  position: fixed;
+  bottom: 10%;
+  font-family: bebas;
+  right: 60%;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  float: right;
+  font-family: bebas;
+  font-size: 1.3rem;
+}
+
+@font-face {
+  font-family: bebas;
+  src: url(bebas/Bebas-Regular.otf);
+}
+
+.winkelwagen {
+  height: 680px;
+  width: 386px;
+  position: fixed;
+  border: 6px solid #f3284d;
+  bottom: 13px;
+  right: 10px;
+}
+
+.een {
+  border-radius: 20px;
+  border: 0;
+  line-height: 1.5;
+  padding: 3.9px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #f3284d;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 65%;
+  right: 77%;
+  font-family: bebas;
+}
+
+.een:hover {
+  background-color: #e5183e;
+}
+
+.een:active {
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.twee {
+  border-radius: 20px;
+  border: 0;
+  line-height: 1.5;
+  padding: 3.9px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #f3284d;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 65%;
+  right: 55%;
+  font-family: bebas;
+}
+
+.twee:hover {
+  background-color: #e5183e;
+}
+
+.twee:active {
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.drie {
+  border-radius: 20px;
+  border: 0;
+  line-height: 1.5;
+  padding: 3.9px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #f3284d;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 65%;
+  right: 32%;
+  font-family: bebas;
+}
+
+.drie:hover {
+  background-color: #e5183e;
+}
+
+.drie:active {
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.vier {
+  border-radius: 20px;
+  border: 0;
+  line-height: 1.5;
+  padding: 3.9px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #f3284d;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 50%;
+  right: 77%;
+  font-family: bebas;
+}
+
+.vier:hover {
+  background-color: #e5183e;
+}
+
+.vier:active {
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.vijf {
+  border-radius: 20px;
+  border: 0;
+  line-height: 1.5;
+  padding: 3.9px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #f3284d;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 50%;
+  right: 55%;
+  font-family: bebas;
+}
+
+.vijf:hover {
+  background-color: #e5183e;
+}
+
+.vijf:active {
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.zes {
+  border-radius: 20px;
+  border: 0;
+  line-height: 1.5;
+  padding: 3.9px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #f3284d;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 50%;
+  right: 32%;
+  font-family: bebas;
+}
+
+.zes:hover {
+  background-color: #e5183e;
+}
+
+.zes:active {
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.zeven {
+  border-radius: 20px;
+  border: 0;
+  line-height: 1.5;
+  padding: 3.9px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #f3284d;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 35%;
+  right: 77%;
+  font-family: bebas;
+}
+
+.zeven:hover {
+  background-color: #e5183e;
+}
+
+.zeven:active {
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.acht {
+  border-radius: 20px;
+  border: 0;
+  line-height: 1.5;
+  padding: 3.9px;
+  font-size: 17.2px;
+  text-align: center;
+  color: #fff;
+  background-color: #f3284d;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 35%;
+  right: 55%;
+  font-family: bebas;
+}
+
+.acht:hover {
+  background-color: #e5183e;
+}
+
+.acht:active {
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.negen {
+  border-radius: 20px;
+  border: 0;
+  line-height: 1.5;
+  padding: 4px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  background-color: #f3284d;
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 35%;
+  right: 32%;
+  font-family: bebas;
+}
+
+.negen:hover {
+  background-color: #e5183e;
+}
+
+.negen:active {
+  box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
