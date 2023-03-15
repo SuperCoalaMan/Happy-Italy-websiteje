@@ -18,8 +18,7 @@ session_start();
         <div class="container">
           <nav>
             <a href="Info/Info.php">info</a>
-            <a href="#">bestellen</a>
-            <a href="#">menu</a>
+            <a href="menu/happyitaly.html">menu</a>
             <?php if (isset($_SESSION['user_id'])) { ?>
             <a href="profile/profile.php">Profiel</a>
             <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>!</h1>
@@ -37,7 +36,7 @@ session_start();
           Bestel hier al uw favoriete pizza's en pasta
         </p>
       </div>
-      <a href="#"><div id="knop">Bestel Hier</div></a>
+      <a href="menu/happyitaly.html"><div id="knop">Bestel Hier</div></a>
         
 
         <div id="stippen">
@@ -49,6 +48,10 @@ session_start();
         <a href="Info/Info.php"><div id="knop2">meer informatie</div></a>
         <div id="lijn"></div>
         <div id="foto3div"><img src="index/img/logo.png" alt="" id="foto3"></div>
+
+        <div id="menuimg">
+          <img src="index/img/image.png" alt="" id="menuimgimg">
+        </div>
 
       </div>
     
