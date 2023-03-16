@@ -114,6 +114,7 @@ transition: background-color 0.6s ease;
     margin-top: -300px;
     margin-left: 15vw;
     font-weight: bold;
+    box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }
 #knop2{
     background-color: #e82f2f;
@@ -128,6 +129,7 @@ transition: background-color 0.6s ease;
     margin-top: -200px;
     margin-left: 15vw;
     font-weight: bold;
+    box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }
 
 #lijn{
@@ -173,6 +175,7 @@ transition: background-color 0.6s ease;
     width: 1500px;
     margin-left: 13%;
     margin-right: 13%;
+    
 }
 #knop3{
     background-color: #e82f2f;
@@ -187,4 +190,5 @@ transition: background-color 0.6s ease;
     margin-top: -450px;
     margin-left: 42vw;
     font-weight: bold;
+    box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }
