@@ -15,6 +15,7 @@ body {
     background: #e82f2f;
     padding: 20px 0;
     color: #fff;
+    z-index: 99;
 }
 .fixed-header {
     top: 0;

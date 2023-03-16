@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 
 
 if ($_SESSION['user_id'] !== 'admin') {
-    header('Location: index.html');
+    header('Location: ../index.php');
     exit();
 }
 
