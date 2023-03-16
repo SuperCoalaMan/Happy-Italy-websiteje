@@ -8,6 +8,7 @@ session_start();
     <link rel="stylesheet" href="Css/Info.css">
     <link rel="shortcut icon" type="image/x-icon" href="../belangrijkeimages/pictogram.png">
     <title>Info - Happy Italy</title>
+    
   </head>
   <body>
     <div class="fixed-header">

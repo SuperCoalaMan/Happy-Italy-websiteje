@@ -41,6 +41,10 @@ if (!isset($_SESSION['user_id'])) {
         <form action="logout.php" method="post">
 		      <button class="logout" type="submit" name="logout">Logout</button>
 	      </form>
+        <select name="pets" id="pet-select">
+          <option value="NL">NL</option>
+          <option value="ENG">ENG</option>
+        </select>
           </nav>
         </div>
       </div>

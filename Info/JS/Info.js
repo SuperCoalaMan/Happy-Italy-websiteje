@@ -1,4 +1,5 @@
 let map = document.getElementById("map");
+
 function locatie(locatie)
 {
     
