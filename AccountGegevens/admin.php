@@ -63,13 +63,12 @@ if (isset($_POST['delete'])) {
     <div class="users">
 	<h1>Aangemelde mensen op de site</h1>
 	<table>
-		<tr>
+		<tr class="aSticky">
 			<th>Username</th>
 			<th>Encrypted Password</th>
 			<th>Action</th>
 		</tr>
 		<?php
-		
 
 		$users = file_get_contents('users.json');
 		$users = json_decode($users, true);

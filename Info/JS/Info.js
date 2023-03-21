@@ -75,7 +75,7 @@ function locatie(locatie)
         {
             map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.5437942672907!2d4.404349552083177!3d51.92403397960602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c43539450c41ed%3A0x9fad603bf28d4bae!2sHappy%20Italy%20Schiedam!5e0!3m2!1sen!2snl!4v1678379481496!5m2!1sen!2snl"
         }
-        if (locatie == "Spijkernisse")
+        if (locatie == "Spijkenisse")
         {
             map.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2464.627488772244!2d4.3226386520815625!3d51.84949857959319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c449b6e68ff613%3A0x27f512cb31fb2ccb!2sHappy%20Italy%20Spijkenisse!5e0!3m2!1sen!2snl!4v1678379533789!5m2!1sen!2snl"
         }
