@@ -25,40 +25,4 @@ document.addEventListener("DOMContentLoaded", function randomNumber() {
         card3.style = "display: block;"
         
   });
-function res()
-{
-      let button = document.getElementById("button");
-      let bestel1 = document.getElementById("bestel1");
-      button.style = "display: none;";
 
-      bestel1.style = "display: block;";
-}
-function closeRes()
-{
-      let button = document.getElementById("button");
-      let bestel1 = document.getElementById("bestel1");
-      button.style = "display: block;";
-
-      bestel1.style = "display: none;";
-}
-
-function openPopup(staat)
-{     
-      let check = document.getElementById("check");
-      let x = document.getElementById("x");
-      let popup = document.getElementById("popup");
-      if (staat == 'check'){
-            check.style = "display: block";
-      } else {
-            x.style = "display: block";
-      }
-      popup.style = "display: block";
-      
-}
-function closePopup()
-{
-
-      let popup = document.getElementById("popup");
-
-      popup.style = "display: none";
-}

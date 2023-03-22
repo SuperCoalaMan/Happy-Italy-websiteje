@@ -8,7 +8,6 @@ session_start();
     <link rel="stylesheet" href="Css/Info.css">
     <link rel="shortcut icon" type="image/x-icon" href="../belangrijkeimages/pictogram.png">
     <title>Info - Happy Italy</title>
-    
   </head>
   <body>
     <div class="fixed-header">
@@ -52,7 +51,7 @@ session_start();
       <div onclick="locatie('Rotterdam de kuip')" class="locatie"><h2>Happy Italy Rotterdam (de Kuip)</h2><p>Rotterdam, 3077 MK</p><p>Cor Kieboomplein 120</p><p>0107420251</p></div>
       <div onclick="locatie('Rotterdam kop van zuid')" class="locatie"><h2>Happy Italy Rotterdam (Kop van Zuid)</h2><p>Rotterdam, 3072 AP</p><p>Wilhelminakade 123</p><p>0107420911</p></div>
       <div onclick="locatie('Schiedam')" class="locatie"><h2>Happy Italy Schiedam</h2><p>Schiedam, 3119 XX</p><p>Noorderweg 16</p><p>0107420919</p></div>
-      <div onclick="locatie('Spijkenisse')" class="locatie"><h2>Happy Italy Spijkenisse</h2><p>Spijkernisse, 3201 CZ</p><p>Markt 42</p><p>0181744097</p></div>
+      <div onclick="locatie('Spijkernisse')" class="locatie"><h2>Happy Italy Spijkernisse</h2><p>Spijkernisse, 3201 CZ</p><p>Markt 42</p><p>0181744097</p></div>
       <div onclick="locatie('Tilburg')" class="locatie"><h2>Happy Italy Tilburg</h2><p>Tilburg, 5038 AH</p><p>Heuvelstraat 126</p><p>0137370300</p></div>
       <div onclick="locatie('Venlo')" class="locatie"><h2>Happy Italy Venlo</h2><p>Venlo, 5911</p><p>Maasstraat 22</p><p>0777440015</p></div>
       <div onclick="locatie('Zoetermeer')" class="locatie"><h2>Happy Italy Zoetermeer</h2><p>Zoetermeer, 2711 EC</p><p>Stadhuisplein 21</p><p>0797440233</p></div>
@@ -68,6 +67,7 @@ session_start();
 </div>
     <!--------------------------->
     <div class="fixed-footer">
+      <div class="container"></div>
     </div>
     <div id="mySidebar" class="sidebar">
         <div class="side-header">
@@ -81,7 +81,7 @@ session_start();
           <h2>Openingstijden</h2>
           <p>Ma t/m vr 16:00u – 22:00u, Za en zo 12:00u – 22:00u. Let op:<br> 
             de keuken sluit om 21:30 uur</p>
-            <h2>Parkeergelegenheid</h2>
+            <h2>Pakeergelegenheid</h2>
             <p>-<p>
         </div>
     </div>
