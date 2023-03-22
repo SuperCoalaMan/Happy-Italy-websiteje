@@ -7,18 +7,28 @@ body {
     box-sizing: border-box;
     
 }
-.fixed-header,
-.fixed-footer {
+.logo {
+    float: left;
+    position: fixed;
+    height: 80px;
+    top: -0%;
+    left: 10px;
+  }
+.fixed-header {
     width: 100%;
     position: fixed;
     background: #e82f2f;
     padding: 20px 0;
     color: #fff;
-}
-.fixed-header {
+    z-index: 999;
     top: 0;
 }
 .fixed-footer {
+    width: 100%;
+    margin-top: 80px;
+    background: #e82f2f;
+    padding: 20px 0;
+    color: #fff;
     bottom: 0;
 }
 .container {
@@ -89,6 +99,7 @@ transition: background-color 0.6s ease;
     margin: 0;
     height: 700px;
     max-height: 700px;
+    transition: img 1s ease-in;
 }
 
 #knop{
@@ -104,6 +115,7 @@ transition: background-color 0.6s ease;
     margin-top: -300px;
     margin-left: 15vw;
     font-weight: bold;
+    box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }
 #knop2{
     background-color: #e82f2f;
@@ -118,6 +130,7 @@ transition: background-color 0.6s ease;
     margin-top: -200px;
     margin-left: 15vw;
     font-weight: bold;
+    box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }
 
 #lijn{
@@ -152,4 +165,31 @@ transition: background-color 0.6s ease;
     font-weight: bold;
     margin-left: 15vw;
     color: #fff;
+}
+
+#menuimg{
+    margin-top: 100px;
+    width: 100%;
+}
+
+#menuimgimg{
+    width: 1500px;
+    margin-left: 13%;
+    margin-right: 13%;
+    
+}
+#knop3{
+    background-color: #e82f2f;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 38px;
+    border-radius: 8px;
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 42vw;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgb(48, 48, 48);
 }
