@@ -65,12 +65,19 @@ nav a {
 }
 
 .winkelwagen {
-  height: 680px;
+  height: 80vh;
+  
   width: 386px;
   position: fixed;
   border: 6px solid #f3284d;
   bottom: 13px;
   right: 10px;
+  overflow-y: auto;
+}
+#witext{
+  font-size: larger;
+  text-align: center;
+  font-family: bebas;
 }
 
 .een {
