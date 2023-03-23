@@ -133,9 +133,11 @@ body, html {
     width: 100px;
     border-radius: 10px;
     border-color: white;
+    transition: .5s;
   }
   .logout:hover{
     border-color: black;
+    scale: 1.01;
   }
   .res{
     width: 160px;

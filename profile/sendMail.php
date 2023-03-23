@@ -17,7 +17,7 @@ if(isset($_POST['submit'])) {
  . "Opmerking: " . "\n" . $_POST['message'];
  
  
- $message2 = "Beste" . $name . "\n"
+ $message2 = "Beste, " . $name . "\n"
  . "Bedankt voor het reserveren." . "\n\n"
  . "U heeft deze opmerking geplaatst: " . "\n" . $_POST['message'] . "\n\n"
  . "U bent welkom op." . $date . "\n\n"
@@ -31,7 +31,7 @@ if(isset($_POST['submit'])) {
  
  
   $result1 = mail($mailto, $subject, $message, $headers); 
-  $result2 = mail($fromEmail, $subject2, $message2, $headers2); 
+  $result2 = mail($fromEmail, $subject2, $message2, $message3, $headers2); 
  
  
  
