@@ -26,4 +26,3 @@ function volgendefoto(){
     img.src= fotos[i]
 }
 
-

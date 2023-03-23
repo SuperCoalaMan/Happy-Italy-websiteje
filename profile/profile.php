@@ -2,11 +2,11 @@
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header('Location: ../AccountGegevens/login.html');
+    header('Location: login.html');
     exit();
 }
 ?>
-<?php include 'sendMail.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,10 +41,6 @@ if (!isset($_SESSION['user_id'])) {
         <form action="logout.php" method="post">
 		      <button class="logout" type="submit" name="logout">Logout</button>
 	      </form>
-        <select name="pets" id="pet-select">
-          <option value="NL">NL</option>
-          <option value="ENG">ENG</option>
-        </select>
           </nav>
         </div>
       </div>
@@ -114,50 +110,10 @@ if (!isset($_SESSION['user_id'])) {
         <p>Krijg een gratis pizaa fragola bij besteding van minimaal 10 euro.</p>
         <div class="infoBtn"><h2>Meer info</h2></div>
     </div>
-    <div class="popup" id="popup">
-          <img id="check" class="popImg" src="<?php echo $check; ?>">
-          <img id="x" class="popImg" src="<?php echo $x; ?>">
-         <p class="success"> <?php echo $success;  ?></p>
-         <p class="failed"> <?php echo $failed;  ?></p>
-         <button class="closePopBtn" onclick="closePopup()">Oke</button>
-      </div>
-    <div id="button" class="res" onclick="res()"><p class="rText">Reserveer</p></div>
-    <div id="bestel1" class="bestel1">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeRes()">&times;</a>
-      <form id="contact" action="" method="post">
-        <h>Reserveren</h><br>
-        <input class="date" type="date" placeholder="Datum" class="datepicker-input" name="datum" required><br>
-        <select class="date" placeholder="personen" name="personen" name="personen" id="personen" required>
-          <option>Personen</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-        <input class="opmerking" type="email" name="email" placeholder="Email" required>
-        <input class="opmerking" type="text" name="name" placeholder="Naam" required>
-        <textarea class="opmerking" id="opmerking" name="message" placeholder="opmerking"></textarea><br>
-      <button class="closePopBtn" type="submit" name="submit" id="contact-submit" data-submit="...Sending">Verzenden</button>
-        
-        </form>
-    </div>
-    
 </div>
     <div class="fixed-footer">
         <div class="container"></div>
       </div>
 <script src="./js/profile.js"></script>
-<?php
-
-    if(isset($_POST['submit'])){
-      echo $script;
-     } 
-     ?>
 </body>
 </html>

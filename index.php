@@ -16,10 +16,10 @@ session_start();
 <body>
     <div class="fixed-header">
         <div class="container">
-          <img class="logo" src="index/img/images.png" alt="image" height="99">
           <nav>
             <a href="Info/Info.php">info</a>
-            <a href="menu/happyitaly.html">menu</a>
+            <a href="#">bestellen</a>
+            <a href="#">menu</a>
             <?php if (isset($_SESSION['user_id'])) { ?>
             <a href="profile/profile.php">Profiel</a>
             <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>!</h1>
@@ -31,13 +31,13 @@ session_start();
       </div>
       <!--Main body en inhoud-->
       <div class="imageSlider">
-        <img class="foto" id="foto" src="Happy_Italy_kinderfeestje.jpeg">
+        <img id="foto" src="Happy_Italy_kinderfeestje.jpeg">
         <p id="titel">Welkom</p>
         <p id="tekst">Op de Happy Italy bestel pagina.<br>
           Bestel hier al uw favoriete pizza's en pasta
         </p>
       </div>
-      <a href="menu/happyitaly.html"><div id="knop">Bestel Hier</div></a>
+      <a href="#"><div id="knop">Bestel Hier</div></a>
         
 
         <div id="stippen">
@@ -49,11 +49,6 @@ session_start();
         <a href="Info/Info.php"><div id="knop2">meer informatie</div></a>
         <div id="lijn"></div>
         <div id="foto3div"><img src="index/img/logo.png" alt="" id="foto3"></div>
-
-        <div id="menuimg">
-          <img src="index/img/image.png" alt="" id="menuimgimg">
-          <a href="menu/happyitaly.html"><div id="knop3">Menu</div></a>
-        </div>
 
       </div>
     

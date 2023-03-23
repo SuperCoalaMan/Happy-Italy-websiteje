@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 
 
 if ($_SESSION['user_id'] !== 'admin') {
-    header('Location: ../index.php');
+    header('Location: index.html');
     exit();
 }
 
@@ -63,12 +63,13 @@ if (isset($_POST['delete'])) {
     <div class="users">
 	<h1>Aangemelde mensen op de site</h1>
 	<table>
-		<tr class="aSticky">
+		<tr>
 			<th>Username</th>
 			<th>Encrypted Password</th>
 			<th>Action</th>
 		</tr>
 		<?php
+		
 
 		$users = file_get_contents('users.json');
 		$users = json_decode($users, true);

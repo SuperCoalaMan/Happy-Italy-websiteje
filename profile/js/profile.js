@@ -25,14 +25,6 @@ document.addEventListener("DOMContentLoaded", function randomNumber() {
         card3.style = "display: block;"
         
   });
-function res()
-{
-      let button = document.getElementById("button");
-      let bestel1 = document.getElementById("bestel1");
-      button.style = "display: none;";
-
-      bestel1.style = "display: block;";
-}
 function closeRes()
 {
       let button = document.getElementById("button");
