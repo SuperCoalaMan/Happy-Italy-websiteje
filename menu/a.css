@@ -1,0 +1,53 @@
+.winkelinhoud{
+    height: 50px;
+    width: 386px;
+    border: 1px solid black;
+}
+.tekst{
+    margin-top: 7px;
+}
+.naam{
+    margin-top: -0.1px;
+    margin-bottom: -19px;
+    margin-left: 10px;
+}
+.prijs{
+    position: absolute;
+    
+    margin-left: 10px;
+}
+.knop{
+
+}
+.plus{
+    margin-top: -52px;
+    border-left: 1px solid black;
+    height: 25px;
+    background-color: #e82f2f;
+}
+.min{
+    border-left: 1px solid black;
+    height: 26px;
+    background-color: #e82f2f;
+}
+
+.plus:hover{
+    background-color: #c12d2d;
+}
+
+.min:hover{
+    background-color: #b92c2c;
+}
+.aantal{
+    margin-left: 330px;
+    margin-top: -25px;
+}
+.knoppen{
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin-left: 361px;
+    display: inline-block;
+    position: absolute;
+}
