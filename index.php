@@ -27,7 +27,7 @@ session_start();
         <?php } ?>
           </nav>
 
-          <div class="bestel"><a href="Menu(Nick)/Menu(Nick).html">Menu/Bestellen</a></div>
+          <div class="bestel"><a href="Menu/Menu.html">Menu/Bestellen</a></div>
           
         </div>
       </div>
@@ -39,7 +39,7 @@ session_start();
           Bestel hier al uw favoriete pizza's en pasta
         </p>
       </div>
-      <a href="menu/happyitaly.html"><div id="knop">Bestel Hier</div></a>
+      <a href="Menu/Menu.html"><div id="knop">Bestel Hier</div></a>
         
 
         <div id="stippen">
@@ -53,7 +53,7 @@ session_start();
         <div id="foto3div"><img src="index/img/logo.png" alt="" id="foto3"></div>
         <div id="menuimg">
           <img src="index/img/image.png" alt="" id="menuimgimg">
-          <a href="menu/happyitaly.html"><div id="knop3">Menu</div></a>
+          <a href="Menu/Menu.html"><div id="knop3">Menu</div></a>
         </div>
       </div>
     
