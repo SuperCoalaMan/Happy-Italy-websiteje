@@ -195,3 +195,17 @@ transition: background-color 0.6s ease;
     margin-left: 15vw;
     color: #fff;
 }
+.bestel a{
+    height: auto;
+    width: 160px;
+    background-color:white !important;
+    font-size: 20px !important;
+    color: #f33051;
+    text-decoration: none;
+    font-family: fantasy;
+    padding: 10px 10px;
+    display: inline-block;
+    float: right;
+    margin-right: 2%;
+    margin-top: -2%;
+}
