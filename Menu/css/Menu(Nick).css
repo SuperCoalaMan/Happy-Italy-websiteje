@@ -4,6 +4,21 @@
   top: -0%;
   left: 10px;
 }
+.button {
+color: #fffbfc;
+height: 6%;
+width: 65%;
+position: relative;
+bottom: -85%;
+text-align: center;
+-webkit-box-shadow: -2px 2px 5px 0px rgba(115, 115, 115, 0.72);
+border-radius: 15px;
+font-family: bebas;
+background-color: #f3284d;
+font-size: large;
+
+
+}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
