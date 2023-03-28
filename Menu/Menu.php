@@ -188,10 +188,10 @@ session_start();
 
 
 
-     <button class="button"href="bedankt.html"><p>Bestellen</p></button>
+     <button class="button"><a href="bedankt.html">Bestellen</a></button>
       
    <?php } else { ?>
-    <button class="button" href="../AccountGegevens/login.html"><p>Log in</p></button>
+    <button class="button"><a href="../AccountGegevens/login.html">Log-in</a></button>
    <?php } ?>
   </div>
   <div class="fixed-footer"></div>

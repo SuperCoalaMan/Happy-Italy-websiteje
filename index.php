@@ -27,7 +27,7 @@ session_start();
         <?php } ?>
           </nav>
 
-          <div class="bestel"><a href="Menu/Menu.html">Menu/Bestellen</a></div>
+          <div class="bestel"><a href="menu/Menu.php">Menu/Bestellen</a></div>
           
         </div>
       </div>
