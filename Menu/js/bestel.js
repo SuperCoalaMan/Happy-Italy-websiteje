@@ -32,7 +32,7 @@ function addToCart(id){
                         totaalprijs.toFixed(2)
                     }
                     totaalprijs = totaalprijs.toFixed(2)
-                    console.log(totaalprijs)
+                    document.getElementById("totaalPrijs").innerHTML = totaalprijs;
                     return;
                     
                 }
@@ -49,7 +49,7 @@ function addToCart(id){
         totaalprijs.toFixed(2)
     }
     totaalprijs = totaalprijs.toFixed(2)
-    console.log(totaalprijs)
+    document.getElementById("totaalPrijs").innerHTML = totaalprijs;
 }
 
 function knop(welke,id){
@@ -89,5 +89,5 @@ function knop(welke,id){
         totaalprijs.toFixed(2)
     }
     totaalprijs = totaalprijs.toFixed(2)
-    console.log(totaalprijs)
+    document.getElementById("totaalPrijs").innerHTML = totaalprijs;
 }

@@ -60,7 +60,7 @@ session_start();
       </div>
       <div onclick="addToCart(5)" id="pro5" class="grid-item">
         <p id="naam">Pasta Funghi</p>
-        <p id="prijs">€9.45</p>
+        <p id="prijs">9.45</p>
         <p id="ingriedenten">
           Roomsaus, champignons, peterselie en Parmezaanse kaas
         </p>
@@ -105,7 +105,7 @@ session_start();
       </div>
       <div onclick="addToCart(11)" id="pro11" class="grid-item">
         <p id="naam">Pizza Contadina</p>
-        <p id="prijs">€7.45</p>
+        <p id="prijs">7.45</p>
         <p id="ingriedenten">
           Tomatensaus, cherrytomaten, rucola en Parmezaanse kaas
         </p>
@@ -182,18 +182,20 @@ session_start();
       </div>
     </div>
   </div>
-  <div class="cart" 2 id="winkelwagen">
+  <div class="cart">
     <h2>winkelmandje &#128722;</h2>
+    <div id="winkelwagen"></div>
     <?php if (isset($_SESSION['user_id'])) { ?>
 
-
-
-     <button class="button"><a href="bedankt.html">Bestellen</a></button>
       
-   <?php } else { ?>
-    <button class="button"><a href="../AccountGegevens/login.html">Log-in</a></button>
-   <?php } ?>
+
+<button class="button"><a href="bedankt.html">Bestellen</a><div id="totaalPrijs"></div></button>
+ 
+<?php } else { ?>
+<button class="button"><a href="../AccountGegevens/login.html">Log-in</a><div id="totaalPrijs"></div></button>
+<?php } ?>
   </div>
+  
   <div class="fixed-footer"></div>
 </body>
 
