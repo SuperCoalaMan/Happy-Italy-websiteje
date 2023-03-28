@@ -11,7 +11,7 @@ function addToCart(id){
 
         if(eerste==false){
             let div = document.createElement("div")
-            div.innerHTML = '<div id="winkelinhoud'+id+'"><div class="tekst"><p id="naam"class="naam">' + Naam +'</p><p id="prijs'+id+'"class="Prijs">'+ Prijs + '</p></div><div class="aantal"><p id="aantal'+id+'">'+aantal+'</p></div><div id="knoppen" class="knoppen"><div id="plus" class="plus" onclick="knop(`plus`,'+id+')">+</div><div id="min" class="min" onclick="knop(`min`,'+id+')">-</div></div></div>'    
+            div.innerHTML = '<div id="winkelinhoud'+id+'" class="winkelinhoud"><div class="tekst"><p id="naam"class="naam">' + Naam +'</p><p id="prijs'+id+'"class="Prijs">'+ Prijs + '</p></div><div class="aantal"><p id="aantal'+id+'">'+aantal+'</p></div><div id="knoppen" class="knoppen"><div id="plus" class="plus" onclick="knop(`plus`,'+id+')">+</div><div id="min" class="min" onclick="knop(`min`,'+id+')">-</div></div></div>'    
             document.getElementById("winkelwagen").appendChild(div)
             array.push(id)
             eerste = true
@@ -38,7 +38,7 @@ function addToCart(id){
                 }
             }
             let div = document.createElement("div")
-            div.innerHTML = '<div id="winkelinhoud'+id+'"><div class="tekst"><p id="naam"class="naam">' + Naam +'</p><p id="prijs'+id+'"class="Prijs">'+ Prijs + '</p></div><div class="aantal"><p id="aantal'+id+'">'+aantal+'</p></div><div id="knoppen" class="knoppen"><div id="plus" class="plus" onclick="knop(`plus`,'+id+')">+</div><div id="min" class="min" onclick="knop(`min`,'+id+')">-</div></div></div>'
+            div.innerHTML = '<div id="winkelinhoud'+id+'" class="winkelinhoud"><div class="tekst"><p id="naam"class="naam">' + Naam +'</p><p id="prijs'+id+'"class="Prijs">'+ Prijs + '</p></div><div class="aantal"><p id="aantal'+id+'">'+aantal+'</p></div><div id="knoppen" class="knoppen"><div id="plus" class="plus" onclick="knop(`plus`,'+id+')">+</div><div id="min" class="min" onclick="knop(`min`,'+id+')">-</div></div></div>'
             document.getElementById("winkelwagen").appendChild(div)
             array.push(id)
     } 

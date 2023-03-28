@@ -133,3 +133,7 @@ body::-webkit-scrollbar {
   font-family: bebas;
   src: url(bebas/Bebas-Regular.ttf);
 }
+
+.winkelinhoud{
+  border: 1px solid black;
+}
