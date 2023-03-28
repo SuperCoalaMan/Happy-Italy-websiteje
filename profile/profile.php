@@ -13,7 +13,7 @@ if (!isset($_SESSION['user_id'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
     <link rel="stylesheet" href="css/profile.css">
     <link rel="shortcut icon" type="image/x-icon" href="../belangrijkeimages/pictogram.png">
     <title>Profiel - Happy Italy</title>
@@ -30,8 +30,7 @@ if (!isset($_SESSION['user_id'])) {
         
           <nav id="nav">
             <a href="../Info/Info.php">info</a>
-            <a href="#">bestellen</a>
-            <a href="#">menu</a>
+            <a href="#">bestellen/menu</a>
             <a href="../index.php">Home</a>
             <?php if (isset($_SESSION['user_id'])) { ?>
             <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>! -Profiel</h1>

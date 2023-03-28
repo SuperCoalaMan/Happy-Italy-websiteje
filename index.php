@@ -19,8 +19,6 @@ session_start();
         <img class="logo" src="index/img/images.png" alt="image" height="99">
           <nav>
             <a href="Info/Info.php">info</a>
-            <a href="#">bestellen</a>
-            <a href="Menu(Nick).html">menu</a>
             <?php if (isset($_SESSION['user_id'])) { ?>
             <a href="profile/profile.php">Profiel</a>
             <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>!</h1>
@@ -28,6 +26,9 @@ session_start();
           <a href="AccountGegevens/login.html">Login</a>
         <?php } ?>
           </nav>
+
+          <div class="bestel"><a href="Menu/Menu.html">Menu/Bestellen</a></div>
+          
         </div>
       </div>
       <!--Main body en inhoud-->
@@ -38,7 +39,7 @@ session_start();
           Bestel hier al uw favoriete pizza's en pasta
         </p>
       </div>
-      <a href="menu/happyitaly.html"><div id="knop">Bestel Hier</div></a>
+      <a href="Menu/Menu.html"><div id="knop">Bestel Hier</div></a>
         
 
         <div id="stippen">
@@ -52,7 +53,7 @@ session_start();
         <div id="foto3div"><img src="index/img/logo.png" alt="" id="foto3"></div>
         <div id="menuimg">
           <img src="index/img/image.png" alt="" id="menuimgimg">
-          <a href="menu/happyitaly.html"><div id="knop3">Menu</div></a>
+          <a href="Menu/Menu.html"><div id="knop3">Menu</div></a>
         </div>
       </div>
     
