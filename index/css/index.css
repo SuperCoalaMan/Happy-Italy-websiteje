@@ -10,17 +10,19 @@ body {
 .logo {
     float: left;
     position: fixed;
-    height: 80px;
+    height: 100px;
     top: -0%;
     left: 10px;
   }
 .fixed-header{
     top: 0;
+    max-height: 100px;
     width: 100%;
     position: fixed;
     background: #f30039;
     padding: 20px 0;
     color: #fff;
+
     z-index: 999;
     background-image: url(../../belangrijkeimages/rough-cloth-light.png);
 }
@@ -88,10 +90,6 @@ transition: background-color 0.6s ease;
 
 #stip1{
  margin-left: -30px
-}
-
-#stip2{
-
 }
 
 #stip3{
@@ -206,5 +204,4 @@ transition: background-color 0.6s ease;
     display: inline-block;
     float: right;
     margin-right: 2%;
-    margin-top: -2%;
 }
