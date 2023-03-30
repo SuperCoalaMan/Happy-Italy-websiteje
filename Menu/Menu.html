@@ -1,4 +1,8 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="css/Menu(Nick).css" />
+  <link rel="stylesheet" href="css/.css" />
   <script src="js/bestel.js" defer></script>
 </head>
  
@@ -16,16 +21,18 @@
   <div class="fixed-header">
     <div class="container">
       <img class="logo" src="images.jpeg" alt="image" height="99" />
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Bestellen/Menu</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Info</a></li>
-          </ul>
-        </nav>
-      </header>
+      <nav>
+        <div class="bestel"><a href="menu/Menu.php">Menu/Bestellen</a></div>
+        <a href="Info/Info.php">Info</a>
+        <a href="index.php">Home</a>
+      <?php if (isset($_SESSION['user_id'])) { ?>
+        <a href="profile/profile.php">Profiel</a>
+        <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>!</h1>
+    <?php } else { ?>
+      <a href="AccountGegevens/login.html">Login</a>
+    <?php } ?>
+    </nav>
+
     </div>
   </div>
   <div class="container">
@@ -59,7 +66,7 @@
       </div>
       <div onclick="addToCart(5)" id="pro5" class="grid-item">
         <p id="naam">Pasta Funghi</p>
-        <p id="prijs">€9.45</p>
+        <p id="prijs">9.45</p>
         <p id="ingriedenten">
           Roomsaus, champignons, peterselie en Parmezaanse kaas
         </p>
@@ -104,7 +111,7 @@
       </div>
       <div onclick="addToCart(11)" id="pro11" class="grid-item">
         <p id="naam">Pizza Contadina</p>
-        <p id="prijs">€7.45</p>
+        <p id="prijs">7.45</p>
         <p id="ingriedenten">
           Tomatensaus, cherrytomaten, rucola en Parmezaanse kaas
         </p>
@@ -181,9 +188,20 @@
       </div>
     </div>
   </div>
-  <div class="cart" 2 id="winkelwagen">
+  <div class="cart">
     <h2>winkelmandje &#128722;</h2>
+    <div id="winkelwagen"></div>
+    <?php if (isset($_SESSION['user_id'])) { ?>
+
+      
+
+<button class="button"><a href="bedankt.html">Bestellen</a><div id="totaalPrijs"></div></button>
+ 
+<?php } else { ?>
+<button class="button"><a href="../AccountGegevens/login.html">Log-in</a><div id="totaalPrijs"></div></button>
+<?php } ?>
   </div>
+  
   <div class="fixed-footer"></div>
 </body>
 

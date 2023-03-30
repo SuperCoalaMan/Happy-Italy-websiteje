@@ -1,55 +1,43 @@
 .logo {
   float: left;
   position: fixed;
+  height: 90px;
   top: -0%;
   left: 10px;
 }
-header {
-  background-color: red;
+.fixed-header{
+  top: 0;
+  height: 95px;
+  width: 100%;
+  position: fixed;
+  background: #f30039;
+  padding: 10px ;
+  color: #fff;
+  z-index: 999;
+  background-image: url(../../belangrijkeimages/rough-cloth-light.png);
+}
+.fixed-footer {
+  bottom: 0;
+  width: 100%;
+  margin-top: 80px;
   padding: 10px;
-  float: right;
-
+  color: #fff;
+  background: #f30039;
+  background-image: url(../../belangrijkeimages/rough-cloth-light.png);
 }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-
-}
-
-nav li {
-  margin-right: 10px;
-
-}
-
-nav li:last-child {
-  margin-right: 40px;
- 
-}
-
-nav a {
-  color: white;
-  font-size: 18px;
-
-}
-
-
-
 .button {
-  color: #fffbfc;
-  height: 6%;
-  width: 65%;
-  position: absolute;
-  bottom: 8%;
-  text-align: center;
-  -webkit-box-shadow: -2px 2px 5px 0px rgba(115, 115, 115, 0.72);
-  border-radius: 15px;
-  font-family: bebas;
-  background-color: #f3284d;
-  font-size: large;
-  margin-left: -32%;
+color: #fffbfc;
+height: 6%;
+width: 65%;
+position: relative;
+bottom: -85%;
+text-align: center;
+-webkit-box-shadow: -2px 2px 5px 0px rgba(115, 115, 115, 0.72);
+border-radius: 15px;
+font-family: bebas;
+background-color: #f3284d;
+font-size: large;
+
 
 }
 .grid-container {
@@ -123,6 +111,19 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
+.fixed-header,
+.fixed-footer {
+  width: 100%;
+  position: fixed;
+  background: #f3284d;
+  padding: 17px 0;
+  color: #fff;
+  z-index: 50%;
+}
+
+.fixed-header {
+  top: -2%;
+}
 
 nav a {
   color: #fff;
@@ -152,9 +153,4 @@ body::-webkit-scrollbar {
 @font-face {
   font-family: bebas;
   src: url(bebas/Bebas-Regular.ttf);
-}
-
-#winkelwagen{
-  overflow-y: auto;
-  height: 600px;
 }
