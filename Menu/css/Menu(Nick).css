@@ -25,6 +25,19 @@
   background: #f30039;
   background-image: url(../../belangrijkeimages/rough-cloth-light.png);
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  padding: 15px;
+  display: inline-block;
+  float: right;
+}
 .button {
 color: #fffbfc;
 height: 6%;
