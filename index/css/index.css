@@ -14,25 +14,24 @@ body {
     top: -0%;
     left: 10px;
   }
-.fixed-header,
-.fixed-footer {
+.fixed-header{
+    top: 0;
     width: 100%;
     position: fixed;
-    background: #e82f2f;
+    background: #f30039;
     padding: 20px 0;
     color: #fff;
     z-index: 999;
-}
-.fixed-header {
-    top: 0;
+    background-image: url(../../belangrijkeimages/rough-cloth-light.png);
 }
 .fixed-footer {
     bottom: 0;
     width: 100%;
     margin-top: 80px;
-    background: #e82f2f;
     padding: 20px 0;
     color: #fff;
+    background: #f30039;
+    background-image: url(../../belangrijkeimages/rough-cloth-light.png);
 }
 .container {
     width: 80%;
