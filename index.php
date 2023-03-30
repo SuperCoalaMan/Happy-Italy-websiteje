@@ -18,16 +18,17 @@ session_start();
         <div class="container">
         <img class="logo" src="index/img/images.png" alt="image" height="99">
           <nav>
-            <a href="Info/Info.php">info</a>
-            <?php if (isset($_SESSION['user_id'])) { ?>
+            <div class="bestel"><a href="menu/Menu.php">Menu/Bestellen</a></div>
+            <a href="Info/Info.php">Info</a>
+            <a href="index.php">Home</a>
+          <?php if (isset($_SESSION['user_id'])) { ?>
             <a href="profile/profile.php">Profiel</a>
             <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>!</h1>
         <?php } else { ?>
           <a href="AccountGegevens/login.html">Login</a>
         <?php } ?>
-          </nav>
+        </nav>
 
-          <div class="bestel"><a href="menu/Menu.php">Menu/Bestellen</a></div>
           
         </div>
       </div>
