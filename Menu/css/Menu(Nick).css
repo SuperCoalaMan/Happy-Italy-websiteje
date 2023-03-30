@@ -25,6 +25,19 @@
   background: #f30039;
   background-image: url(../../belangrijkeimages/rough-cloth-light.png);
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  padding: 15px;
+  display: inline-block;
+  float: right;
+}
 .button {
 color: #fffbfc;
 height: 6%;
@@ -78,7 +91,6 @@ font-size: large;
   height: 85%;
   width: 24%;
   display: inline-block;
-  position: absolute;
   -webkit-box-shadow: -5px 7px 16px 0px rgba(0, 0, 0, 0.72);
   -moz-box-shadow: -5px 7px 16px 0px rgba(0, 0, 0, 0.72);
   box-shadow: -5px 7px 16px 0px rgba(0, 0, 0, 0.72);
@@ -88,6 +100,11 @@ font-size: large;
   font-family: bebas;
   color: #f3284d;
   bottom: 2%;
+}
+
+.cart a{
+  color: #fff;
+  text-decoration: none;
 }
 .grid-item {
   background-color: #f3284d;
@@ -111,28 +128,6 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
-.fixed-header,
-.fixed-footer {
-  width: 100%;
-  position: fixed;
-  background: #f3284d;
-  padding: 17px 0;
-  color: #fff;
-  z-index: 50%;
-}
-
-.fixed-header {
-  top: -2%;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 20px;
-  font-family: bebas;
-  font-size: 1.3rem;
-  float: right;
-}
 
 body,
 html {
@@ -154,3 +149,19 @@ body::-webkit-scrollbar {
   font-family: bebas;
   src: url(bebas/Bebas-Regular.ttf);
 }
+
+.bestel a{
+  height: auto;
+  width: 160px;
+  background-color:white !important;
+  font-size: 20px !important;
+  color: #f33051;
+  text-decoration: none;
+  font-family: fantasy;
+  padding: 10px 10px;
+  display: inline-block;
+  float: right;
+  margin-left: 75%;
+  position: fixed;
+}
+
