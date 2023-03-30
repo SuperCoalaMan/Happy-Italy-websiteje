@@ -4,6 +4,39 @@
   top: -0%;
   left: 10px;
 }
+header {
+  background-color: red;
+  padding: 10px;
+  float: right;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+nav li {
+  margin-right: 10px;
+
+}
+
+nav li:last-child {
+  margin-right: 40px;
+ 
+}
+
+nav a {
+  color: white;
+  font-size: 18px;
+
+}
+
+
+
 .button {
   color: #fffbfc;
   height: 6%;
@@ -89,19 +122,6 @@ body {
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
-}
-.fixed-header,
-.fixed-footer {
-  width: 100%;
-  position: fixed;
-  background: #f3284d;
-  padding: 17px 0;
-  color: #fff;
-  z-index: 50%;
-}
-
-.fixed-header {
-  top: -2%;
 }
 
 nav a {
