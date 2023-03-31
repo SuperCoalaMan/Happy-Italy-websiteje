@@ -47,9 +47,8 @@ if (isset($_POST['delete'])) {
 <div class="fixed-header">
       <div class="container">
         <nav id="nav">
-          <a href="#">bestellen</a>
+          <a href="../menu/Menu.php">bestellen/menu</a>
 		  <a href="../Info/Info.php">Info</a>
-          <a href="#">menu</a>
           <a href="../index.html">Home</a>
           <?php if (isset($_SESSION['user_id'])) { ?>
             <a href="../profile/profile.php">Profiel</a>

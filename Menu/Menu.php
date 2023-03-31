@@ -195,7 +195,7 @@ session_start();
 
       
 
-<button class="button"><a href="bedankt.html">Bestellen</a><div id="totaalPrijs"></div></button>
+      <button onclick="window.location.href = 'bedankt.php';"  class="button"><p>Bestellen</p><div id="totaalPrijs">0.00</div></button>
  
 <?php } else { ?>
 <button class="button"><a href="../AccountGegevens/login.html">Log-in</a><div id="totaalPrijs"></div></button>

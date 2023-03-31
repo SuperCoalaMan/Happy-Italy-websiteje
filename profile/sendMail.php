@@ -31,7 +31,7 @@ if(isset($_POST['submit'])) {
  
  
   $result1 = mail($mailto, $subject, $message, $headers); 
-  $result2 = mail($fromEmail, $subject2, $message2, $message3, $headers2); 
+  $result2 = mail($fromEmail, $subject2, $message2, $headers2); 
  
  
  

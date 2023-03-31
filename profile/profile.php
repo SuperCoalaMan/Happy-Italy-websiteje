@@ -30,7 +30,7 @@ if (!isset($_SESSION['user_id'])) {
         
           <nav id="nav">
             <a href="../Info/Info.php">info</a>
-            <a href="#">bestellen/menu</a>
+            <a href="../menu/Menu.php">bestellen/menu</a>
             <a href="../index.php">Home</a>
             <?php if (isset($_SESSION['user_id'])) { ?>
             <h1>Welkom terug, <?php echo $_SESSION['user_id']; ?>! -Profiel</h1>
